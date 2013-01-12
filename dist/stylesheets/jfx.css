@@ -1,0 +1,17 @@
+.jfx-idle {
+  -webkit-transition: none !important; }
+
+.jfx-translate {
+  -webkit-transition: -webkit-transform .5s ease; }
+
+.jfx-fade {
+  -webkit-transition: opacity .5s ease; }
+
+.jfx-fade-in {
+  opacity: 1; }
+
+.jfx-fade-out {
+  opacity: 0; }
+
+.jfx-fade-out-complete {
+  display: none; }

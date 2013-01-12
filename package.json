@@ -1,0 +1,15 @@
+{
+  "title":"MerryJS",
+  "name":"merryjs",
+  "version":"0.0.1",
+  "dependencies":{
+    "coffee-script":">= 0.0.1",
+    "mincer":">= 0.0.1",
+    "grunt-sass":">= 0.0.1",
+    "grunt-coffeelint":">= 0.0.1"
+  },
+  "author":{
+    "name":"Sergio Ramirez"
+  },
+  "licenses":{}
+}

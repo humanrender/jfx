@@ -1,0 +1,52 @@
+<!DOCTYPE>
+<html>
+  <head>
+    <title>JFX - Javascript for you FX</title>
+    <link rel="stylesheet" type="text/css" href="../dist/stylesheets/jfx.css">
+    <link rel="stylesheet" type="text/css" href="stylesheets/styles.css">
+
+  </head>
+
+  <body>
+    <h1>JFX - Javascript for you FX</h1>
+    <h2>Examples</h2>
+    <h3>Translate</h3>
+    <div id="example-translate" class="example">
+      <div class="rectangle"></div>
+    </div>
+    <h3>Fade</h3>
+    <div id="example-fade" class="example">
+      <div class="rectangle"></div>
+    </div>
+    <script type="text/javascript" src="../lib/jquery.js"></script>
+    <script type="text/javascript" src="../dist/javascripts/jfx.js"></script>
+    <script type="text/javascript">
+      $("#example-translate .rectangle")
+        .jfx()
+          .translate({
+            x:300,
+            y:10,
+            duration:1,
+            delay:0.5,
+            ease: "ease-out"
+          })
+
+      $("#example-fade .rectangle")
+        .jfx()
+          .fade({
+            state: "out",
+            duration:2
+          })
+          .end()
+        .on("jfx-fadeend", function(){
+          var rectangle = $(this)
+          rectangle
+            .jfx()
+              .fade({
+                state: !rectangle.is(":visible") ? "in" : "out"
+              })
+        })
+        
+    </script>
+  </body>
+</html>
